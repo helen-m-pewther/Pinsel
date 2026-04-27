@@ -1,0 +1,29 @@
+.authSplit {
+    height: 100vh;
+    display: flex;
+    width: 100%; 
+    align-items: center;
+    outline: 5px solid blue; 
+}
+
+
+.heroPanel {
+    width: 50%;
+    background-color: var(--color-espresso); 
+    color: var(--color-parchment);
+    height: 100%; 
+    display: block; 
+}
+
+.formPanel {
+    width: 50%; 
+}
+
+.login {
+    
+}
+
+.subheading {
+    font-size: 0.8rem; 
+    color: var(--color-parchment)
+}
