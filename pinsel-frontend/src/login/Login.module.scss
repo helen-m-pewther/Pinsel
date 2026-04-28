@@ -1,29 +1,99 @@
+/* ── Layout ─────────────────────────────────────────── */
+
 .authSplit {
     height: 100vh;
     display: flex;
-    width: 100%; 
-    align-items: center;
-    outline: 5px solid blue; 
+    width: 100%;
 }
 
+
+/* ── Hero panel (left) ───────────────────────────────── */
 
 .heroPanel {
     width: 50%;
-    background-color: var(--color-espresso); 
+    background-color: var(--color-espresso);
     color: var(--color-parchment);
-    height: 100%; 
-    display: block; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 48px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
 }
 
-.formPanel {
-    width: 50%; 
-}
-
-.login {
-    
+.brandmark {
+    h3 {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--color-parchment);
+        letter-spacing: 0.01em;
+    }
 }
 
 .subheading {
-    font-size: 0.8rem; 
-    color: var(--color-parchment)
+    font-size: 0.75rem;
+    color: var(--color-walnut);
+    margin: 3px 0 0;
 }
+
+
+/* ── Hero bottom ─────────────────────────────────────── */
+
+.heroBottom {
+    flex-shrink: 0;
+
+    blockquote {
+        font-family: Georgia, serif;
+        font-style: italic;
+        font-size: 1.35rem;
+        line-height: 1.45;
+        color: var(--color-parchment);
+        margin: 0 0 20px;
+        padding: 0;
+    }
+}
+
+.featureList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 24px;
+
+    li {
+        font-size: 0.78rem;
+        color: var(--color-dust);
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        &::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--color-accent);
+            display: inline-block;
+            flex-shrink: 0;
+        }
+    }
+}
+
+
+/* ── Form panel (right) ──────────────────────────────── */
+
+.formPanel {
+    width: 50%;
+    background-color: var(--color-parchment);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 64px;
+    box-sizing: border-box;
+}
+
